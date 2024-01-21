@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Klinap</title>
+</head>
+
+<body>
+  <nav x-data="{ isOpen: false }" class="relative w-full bg-white shadow-md">
+    <div
+      class="container px-6 py-3 mx-auto md:flex md:flex-row md:justify-between md:items-center space-y-1">
+      <div class="flex items-center justify-between">
+        <a href="#" class="w-auto h-6 sm:h-7 text-3xl text-lime-500 font-bold">
+          Kli<span class="text-sky-900">nap.</span>
+        </a>
+
+        <!-- Mobile menu button -->
+        <div class="flex md:hidden">
+          <button x-cloak @click="isOpen = !isOpen" type="button"
+            class="text-neutral-400 hover:text-gray-600 focus:outline-none focus:text-gray-600"
+            aria-label="toggle menu">
+            <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 8h16M4 16h16" />
+            </svg>
+
+            <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+      <div x-cloak
+        :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
+        class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white md:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
+        <div class="flex flex-col md:flex-row md:mx-6">
+          <a class="font-bold my-2 text-lime-500 transition-colors duration-300 transform hover:text-sky-900 md:mx-4 md:my-0"
+            href="#">Home</a>
+          <a class="font-bold my-2 text-lime-500 transition-colors duration-300 transform hover:text-sky-900 md:mx-4 md:my-0"
+            href="#">Tema</a>
+          <a class="font-bold my-2 text-lime-500 transition-colors duration-300 transform dhover:text-sky-900 md:mx-4 md:my-0"
+            href="#">Contact</a>
+          <a class="font-bold my-2 text-lime-500 transition-colors duration-300 transform hover:text-sky-900 md:mx-4 md:my-0"
+            href="#">About</a>
+          <button
+            class="px-5 py-4 md:hidden w-fit my-2 text-white bg-lime-500 font-poppins lg:tracking-wides uppercase transition-colors duration-300 transform border border-white hover:bg-sky-900 hover:text-white">
+            Contact Us
+          </button>
+        </div>
+      </div>
+      <button
+        class="px-5 py-4 hidden md:block text-white bg-lime-500 font-poppins tracking-wides uppercase transition-colors duration-300 transform border border-white hover:bg-sky-900 hover:text-white">
+        Contact Us
+      </button>
+    </div>
+  </nav>
+
+  <section class="splide h-screen overflow-hidden"
+    data-splide='{"type":"loop", "perPage":"1", "gap":"0", "arrows":false, "pagination":false}'>
+    <div class="h-screen splide__track overflow-visible">
+      <ul class="splide__list">
+        <li
+          class="splide__slide w-full flex bg-white bg-cover relative bg-center before:content-[''] before:absolute before:h-full before:w-full before:bg-blue-950 before:opacity-40"
+          style="background-image: url(img/klinap\ 3.webp);"
+          data-splide-interval="1000">
+          <div
+            class="relative px-6 py-16 mx-auto text-center flex flex-col justify-center">
+            <div class="md:max-w-screen-md mx-auto text-center"
+              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              <h1
+                class="text-3xl sm:text-4xl md:text-5xl text-white uppercase tracking-wides font-roboto font-bold">
+                Certified & Experienced Cleaners
+              </h1>
+              <p class="mt-2 text-white font-bold max-w-prose mx-auto">Lorem
+                ipsum is
+                placeholder text commonly used in the graphic, print, and
+                publishing industries </p>
+              <button
+                class="uppercase py-4 px-8 text-white mt-6 font-bold bg-lime-500 hover:bg-sky-900">View
+                Menu</button>
+            </div>
+          </div>
+        </li>
+        <li
+          class="splide__slide w-full flex bg-white bg-cover relative bg-center before:content-[''] before:absolute before:h-full before:w-full before:bg-blue-950 before:opacity-40"
+          style="background-image: url(img/klinap\ 2.webp);"
+          data-splide-interval="1000">
+          <div
+            class="relative px-6 py-16 mx-auto text-center flex flex-col justify-center">
+            <div class="md:max-w-screen-md mx-auto text-center"
+              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              <h1
+                class="text-3xl sm:text-4xl md:text-5xl text-white uppercase tracking-wides font-roboto font-bold">
+                Certified & Experienced Cleaners
+              </h1>
+              <p class="mt-2 text-white font-bold max-w-prose mx-auto">Lorem
+                ipsum is
+                placeholder text commonly used in the graphic, print, and
+                publishing industries </p>
+              <button
+                class="uppercase py-4 px-8 text-white mt-6 font-bold bg-lime-500 hover:bg-sky-900">View
+                Menu</button>
+            </div>
+          </div>
+        </li>
+        <li
+          class="splide__slide w-full flex bg-white bg-cover relative bg-center before:content-[''] before:absolute before:h-full before:w-full before:bg-blue-950 before:opacity-40"
+          style="background-image: url(img/klinap\ 1.webp);"
+          data-splide-interval="1000">
+          <div
+            class="relative px-6 py-16 mx-auto text-center flex flex-col justify-center">
+            <div class="md:max-w-screen-md mx-auto text-center"
+              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              <h1
+                class="text-3xl sm:text-4xl md:text-5xl text-white uppercase tracking-wides font-roboto font-bold">
+                Certified & Experienced Cleaners
+              </h1>
+              <p class="mt-2 text-white font-bold max-w-prose mx-auto">Lorem
+                ipsum is
+                placeholder text commonly used in the graphic, print, and
+                publishing industries </p>
+              <button
+                class="uppercase py-4 px-8 text-white mt-6 font-bold bg-lime-500 hover:bg-sky-900">View
+                Menu</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 lg:px-20 mx-auto">
+      <div
+        class="grid grid-col-1 md:grid-cols-3 -translate-y-20 md:-translate-y-1/4 shadow-lg gap-y-4 rounded-3xl">
+        <div class="font-roboto space-y-2 w-full bg-white p-12 rounded-3xl md:rounded-l-3xl md:rounded-r-none
+        ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-clock h-14 w-14 stroke-lime-500">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <h6 class="font-bold text-2xl tracking-wider text-sky-900">Save Time &
+            Money
+          </h6>
+          <p class="text-neutral-400">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore
+          </p>
+        </div>
+        <div
+          class="font-roboto space-y-2 w-full bg-lime-500 p-12 rounded-3xl md:rounded-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-shopping-cart h-14 w-14 stroke-white">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path
+              d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+            </path>
+          </svg>
+          <h6 class="font-bold text-2xl text-white tracking-wider">Save Time &
+            Money
+          </h6>
+          <p class="text-white">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore
+          </p>
+        </div>
+        <div class="font-roboto space-y-2 w-full bg-sky-900 p-12 rounded-3xl md:rounded-r-3xl md:rounded-tl-none md:rounded-b-none  
+        ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-award h-14 w-14 stroke-white">
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88">
+            </polyline>
+          </svg>
+          <h6 class="font-bold text-2xl text-white tracking-wider">Save Time &
+            Money
+          </h6>
+          <p class="text-white">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container p-6 pb-20 mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div class="w-full p-5">
+          <img src="img/klinap 4.webp" class="ring-8 ring-slate-100 rounded-lg"
+            alt="">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 items-center px-5 md:px-12 -translate-y-20 gap-8 lg:gap-5">
+            <div
+              class="w-full font-roboto p-4 lg:p-8 flex flex-col justify-center rounded-xl shadow-lg text-center bg-white">
+              <h6 class="font-bold text-lime-500 text-3xl lg:text-5xl">560+</h6>
+              <p class="font-bold text-sky-900 text-xl">Project Completed</p>
+            </div>
+            <div
+              class="w-full font-roboto p-4 lg:p-8 flex flex-col justify-center rounded-xl shadow-lg text-center bg-white">
+              <h6 class="font-bold text-lime-500 text-3xl lg:text-5xl">850+</h6>
+              <p class="font-bold text-sky-900 text-xl">Dedicated <br> Cleaner
+              </p>
+            </div>
+            <div
+              class="w-full font-roboto p-4 lg:p-8 flex flex-col justify-center rounded-xl shadow-lg text-center bg-white">
+              <h6 class="font-bold text-lime-500 text-3xl lg:text-5xl">920+</h6>
+              <p class="font-bold text-sky-900 text-xl">Satisfied Customer
+              </p>
+            </div>
+            <div
+              class="w-full font-roboto p-4 lg:p-8 flex flex-col justify-center rounded-xl shadow-lg text-center bg-white">
+              <h6 class="font-bold text-lime-500 text-3xl lg:text-5xl">450+</h6>
+              <p class="font-bold text-sky-900 text-xl">Certified <br> Awards
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full p-5 font-roboto">
+          <h6 class="font-bold text-sky-900 text-xl">About Us</h6>
+          <h6 class="font-bold text-sky-900 text-5xl my-5 max-w-lg">Our Success
+            Cleaning Up
+            Your Mess</h6>
+          <p class="text-lg text-neutral-400">Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Mollitia
+            eligendi eaque voluptates sint! Neque veniam laboriosam consequuntur
+            nemo vero architecto iusto repellendus quas obcaecati eos
+            repudiandae
+            alias, consequatur ipsum vel.</p>
+          <div class="space-y-3 pt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-home h-14 w-14 stroke-lime-500">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <h6 class="font-bold text-sky-900 text-xl">Residential Cleaning</h6>
+            <p class="text-lg text-neutral-400">Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit.
+              Mollitia
+              eligendi eaque voluptates sint!</p>
+            <hr class="h-px my-8 bg-gray-200 border-0">
+          </div>
+          <div class="space-y-3 pt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-trash-2 h-14 w-14 stroke-lime-500">
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path
+                d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+              </path>
+              <line x1="10" y1="11" x2="10" y2="17"></line>
+              <line x1="14" y1="11" x2="14" y2="17"></line>
+            </svg>
+            <h6 class="font-bold text-sky-900 text-xl">Commercial Cleaning</h6>
+            <p class="text-lg text-neutral-400">Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit.
+              Mollitia
+              eligendi eaque voluptates sint!</p>
+            <hr class="h-px my-8 bg-gray-200 border-0">
+          </div>
+          <div class="space-y-3 pt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-map h-14 w-14 stroke-lime-500">
+              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6">
+              </polygon>
+              <line x1="8" y1="2" x2="8" y2="18"></line>
+              <line x1="16" y1="6" x2="16" y2="22"></line>
+            </svg>
+            <h6 class="font-bold text-sky-900 text-xl">Industrail Cleaning</h6>
+            <p class="text-lg text-neutral-400">Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit.
+              Mollitia
+              eligendi eaque voluptates sint!</p>
+            <hr class="h-px my-8 bg-gray-200 border-0">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="w-full h-screen overflow-hidden flex bg-white bg-cover relative bg-center before:content-[''] before:absolute before:h-full before:w-full before:bg-sky-950 before:opacity-70"
+    style="background-image: url(img/klinap\ 5.webp); border-radius: 0 0 5.5rem 5.5rem;">
+    <div
+      class="container px-6 py-20 mx-auto relative flex flex-col items-center justify-center text-center">
+      <div class="font-roboto text-white max-w-screen-md">
+        <h2 class="font-bold text-3xl lg:text-6xl">Book Our Laundry
+          Services & Get 30% Discount</h2>
+        <p class="max-w-prose mx-auto my-6">Lorem ipsum dolor sit amet,
+          consectetur
+          adipiscing elit, sed do
+          eiusmod
+          tempor incididunt ut labore et dolore magna aliqua</p>
+        <div class="flex flex-col items-end justify-end w-max mx-auto">
+          <button
+            class="p-5 h-max w-full text-end group font-roboto text-white bg-lime-500 uppercase gap-3 flex flex-row items-center justify-center hover:bg-white hover:text-sky-900"><a
+              href="http://">DISCOVER MORE</a>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24"
+              class="w-6 h-6 stroke-white group-hover:stroke-sky-900 group-hover:-translate-x-2 transition duration-700 ease-in-out"
+              fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-arrow-right">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 mx-auto">
+      <div
+        class="bg-sky-900 p-12 rounded-3xl grid grid-col-1 md:grid-cols-2 lg:grid-cols-5 gap-x-2 gap-y-5 items-center justify-center -translate-y-20 lg:-translate-y-1/2">
+        <div class="font poppins space-y-2 w-full">
+          <h6 class="text-white text-2xl font-bold">Online Appointment</h6>
+        </div>
+        <div class="font poppins space-y-2 w-full">
+          <input type="text" placeholder="Fullname"
+            class="py-3 px-8 w-full rounded-3xl relative ring-0 outline-0">
+        </div>
+        <div class="font poppins space-y-2 w-full">
+          <input type="number" placeholder="Phone No."
+            class="py-3 px-8 w-full rounded-3xl relative ring-0 outline-0">
+        </div>
+        <select
+          class="text-sky-900/70 h-max py-3.5 font-bold  rounded-3xl px-3 ring-0 outline-0">
+          <option selected disabled hidden>Service Name</option>
+          <option value="CMR">Commercial</option>
+          <option value="RSD">Residential</option>
+          <option value="IDT">Industrial</option>
+        </select>
+        <div class="flex flex-col items-end justify-end">
+          <button
+            class="py-4 h-max w-full text-end group font-roboto text-white bg-lime-500 uppercase gap-3 flex flex-row items-center justify-center hover:bg-white hover:text-sky-900"><a
+              href="http://">Submit Now</a>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24"
+              class="w-6 h-6 stroke-white group-hover:stroke-sky-900 group-hover:-translate-x-2 transition duration-700 ease-in-out"
+              fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-arrow-right">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 py-20 mx-auto">
+      <div class="text-center font-roboto space-y-2 max-w-screen-md mx-auto">
+        <h6 class="font-bold text-lime-500 text-2xl">Our Popular Services</h6>
+        <h3 class="font-bold text-sky-900 text-3xl md:text-6xl leading-8">Our
+          Most Popular
+          Cleaning Services</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+        <div
+          class="p-8 font-roboto space-y-3 rounded-3xl shadow-lg flex flex-col text-center items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-trash-2 h-14 w-14 stroke-lime-500">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path
+              d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+            </path>
+            <line x1="10" y1="11" x2="10" y2="17"></line>
+            <line x1="14" y1="11" x2="14" y2="17"></line>
+          </svg>
+          <h4 class="font-bold text-2xl text-sky-900 hover:text-lime-500">
+            Commercial Cleaning</h4>
+          <p class="text-neutral-400">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          <a href="" class="text-lime-500 hover:text-sky-900 uppercase">
+            Learn more</a>
+        </div>
+        <div
+          class="p-8 font-roboto space-y-3 rounded-3xl shadow-lg flex flex-col text-center items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-coffee h-14 w-14 stroke-lime-500">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+            <line x1="6" y1="1" x2="6" y2="4"></line>
+            <line x1="10" y1="1" x2="10" y2="4"></line>
+            <line x1="14" y1="1" x2="14" y2="4"></line>
+          </svg>
+          <h4 class="font-bold text-2xl text-sky-900 hover:text-lime-500">
+            Kitchen Cleaning</h4>
+          <p class="text-neutral-400">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          <a href="" class="text-lime-500 hover:text-sky-900 uppercase">
+            Learn more</a>
+        </div>
+        <div
+          class="p-8 font-roboto space-y-3 rounded-3xl shadow-lg flex flex-col text-center items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-home h-14 w-14 stroke-lime-500">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <h4 class="font-bold text-2xl text-sky-900 hover:text-lime-500">
+            House Cleaning</h4>
+          <p class="text-neutral-400">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          <a href="" class="text-lime-500 hover:text-sky-900 uppercase">
+            Learn more</a>
+        </div>
+        <div
+          class="p-8 font-roboto space-y-3 rounded-3xl shadow-lg flex flex-col text-center items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-trello h-14 w-14 stroke-lime-500">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <rect x="7" y="7" width="3" height="9"></rect>
+            <rect x="14" y="7" width="3" height="5"></rect>
+          </svg>
+          <h4 class="font-bold text-2xl text-sky-900 hover:text-lime-500">
+            Carpet Cleaning</h4>
+          <p class="text-neutral-400">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          <a href="" class="text-lime-500 hover:text-sky-900 uppercase">
+            Learn more</a>
+        </div>
+        <div
+          class="p-8 font-roboto space-y-3 rounded-3xl shadow-lg flex flex-col text-center items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-grid h-14 w-14 stroke-lime-500">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          <h4 class="font-bold text-2xl text-sky-900 hover:text-lime-500">
+            Office Cleaning</h4>
+          <p class="text-neutral-400">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          <a href="" class="text-lime-500 hover:text-sky-900 uppercase">
+            Learn more</a>
+        </div>
+        <div
+          class="p-8 font-roboto space-y-3 rounded-3xl shadow-lg flex flex-col text-center items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-sliders h-14 w-14 stroke-lime-500">
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="1" y1="14" x2="7" y2="14"></line>
+            <line x1="9" y1="8" x2="15" y2="8"></line>
+            <line x1="17" y1="16" x2="23" y2="16"></line>
+          </svg>
+          <h4 class="font-bold text-2xl text-sky-900 hover:text-lime-500">
+            Road Cleaning</h4>
+          <p class="text-neutral-400">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          <a href="" class="text-lime-500 hover:text-sky-900 uppercase">
+            Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 py-20 mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="p-5 font-roboto">
+          <h6 class="font-bold text-sky-900 text-xl">Our Smart Teams</h6>
+          <h6 class="font-bold text-sky-900 text-5xl my-5 max-w-lg">Know About
+            Our Beautiful Teams</h6>
+          <div class="space-y-4">
+            <h6 class="font-bold text-sky-900 text-xl">Most Awarded Cleaning
+              Teams Since 2014</h6>
+            <p class="text-neutral-400">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+              pulvinar dapibus leo.</p>
+            <p class="text-neutral-400">The placeholder text, beginning with the
+              line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”,
+              looks like Latin because in its youth, centuries ago, it was
+              Latin.</p>
+            <button
+              class="p-4 h-max w-max group font-roboto text-white bg-lime-500 uppercase gap-3 flex flex-row items-center justify-center hover:bg-sky-900 hover:text-white"><a
+                href="http://">Submit Now</a>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 stroke-white group-hover:-translate-x-2 transition duration-700 ease-in-out"
+                fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-right">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="grid max-[550px]:grid-cols-1 min-[550px]:grid-cols-2 gap-5">
+          <div class="w-full relative overflow-hidden rounded-3xl">
+            <img
+              class="object-cover object-center w-full h-64 mx-auto rounded-3xl hover:scale-125 transition-all duration-700 ease-linear"
+              src="img/klinap 6.jpg" alt="avatar" />
+          </div>
+          <div class="w-full relative overflow-hidden rounded-3xl">
+            <img
+              class="object-cover object-center w-full h-64 mx-auto rounded-3xl hover:scale-125 transition-all duration-700 ease-linear"
+              src="img/klinap 7.jpg" />
+          </div>
+          <div class="order-last w-full relative overflow-hidden rounded-3xl">
+            <img
+              class="object-cover object-center w-full h-64 mx-auto rounded-3xl hover:scale-125 transition-all duration-700 ease-linear"
+              src="img/klinap 8.jpg" alt="avatar" />
+          </div>
+          <div class="w-full relative overflow-hidden rounded-3xl">
+            <img
+              class="object-cover object-center w-full h-64 mx-auto rounded-3xl hover:scale-125 transition-all duration-700 ease-linear"
+              src="img/klinap 9.jpg" alt="avatar" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 py-20 mx-auto">
+      <div class="text-center font-roboto space-y-2 max-w-screen-sm mx-auto">
+        <h6 class="font-bold text-lime-500 text-2xl">Our Pricing</h6>
+        <h3 class="font-bold text-sky-900 text-3xl md:text-6xl leading-8">Our
+          Special Pricing Package</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+        <div
+          class="p-8 font-roboto space-y-8 border rounded-3xl shadow-lg flex flex-col text-center items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-bar-chart-2 h-20 w-20 p-5 bg-sky-900 rounded-full stroke-white">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+          <div class="">
+            <h4 class="font-bold text-2xl text-sky-900 hover:text-lime-500">
+              Small</h4>
+            <p class="text-neutral-400">Lorem Ipsum Dolor Sit Amet, Consectetur
+              Adipiscing Elit, Sed Do Eiusmod Tempor</p>
+          </div>
+          <h5 class="font-bold text-lime-500 hover:text-sky-900">$ <span
+              class="text-5xl">5.99</span>/Month</h5>
+          <div class="space-y-5">
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Carpet Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Cutton Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Bedroom Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Floor Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Bathroom Cleaning</p>
+            </div>
+          </div>
+          <button
+            class="p-3 h-max w-max font-roboto text-white bg-lime-500 uppercase hover:bg-sky-900"><a
+              href="http://">DISCOVER MORE</a>
+          </button>
+        </div>
+        <div
+          class="p-8 font-roboto bg-sky-900 space-y-8 border rounded-3xl shadow-lg flex flex-col text-center items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-bar-chart h-20 w-20 p-5 bg-lime-500 rounded-full stroke-white">
+            <line x1="12" y1="20" x2="12" y2="10"></line>
+            <line x1="18" y1="20" x2="18" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="16"></line>
+          </svg>
+          <div class="">
+            <h4 class="font-bold text-2xl text-white hover:text-lime-500">
+              Middle</h4>
+            <p class="text-neutral-400">Lorem Ipsum Dolor Sit Amet, Consectetur
+              Adipiscing Elit, Sed Do Eiusmod Tempor</p>
+          </div>
+          <h5 class="font-bold text-white hover:text-lime-500">$ <span
+              class="text-5xl">9.99</span>/Month</h5>
+          <div class="space-y-5">
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Carpet Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Cutton Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Bedroom Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Floor Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Bathroom Cleaning</p>
+            </div>
+          </div>
+          <button
+            class="p-3 h-max w-max font-roboto text-white bg-lime-500 uppercase hover:bg-white hover:text-sky-900"><a
+              href="http://">DISCOVER MORE</a>
+          </button>
+        </div>
+        <div
+          class="p-8 font-roboto space-y-8 border rounded-3xl shadow-lg flex flex-col text-center items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-wifi h-20 w-20 p-5 bg-sky-900 rounded-full stroke-white">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+          </svg>
+          <div class="">
+            <h4 class="font-bold text-2xl text-sky-900 hover:text-lime-500">
+              Large</h4>
+            <p class="text-neutral-400">Lorem Ipsum Dolor Sit Amet, Consectetur
+              Adipiscing Elit, Sed Do Eiusmod Tempor</p>
+          </div>
+          <h5 class="font-bold text-lime-500 hover:text-sky-900">$ <span
+              class="text-5xl">15.49</span>/Month</h5>
+          <div class="space-y-5">
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Carpet Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Cutton Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Bedroom Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Floor Cleaning</p>
+            </div>
+            <div class="flex font-roboto gap-2 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-check h-5 w-5 stroke-lime-500">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p class="text-neutral-400 text-lg">Bathroom Cleaning</p>
+            </div>
+          </div>
+          <button
+            class="p-3 h-max w-max font-roboto text-white bg-lime-500 uppercase hover:bg-sky-900"><a
+              href="http://">DISCOVER MORE</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 pt-20 mx-auto">
+      <div class="text-center font-roboto space-y-2 max-w-screen-sm mx-auto">
+        <h6 class="font-bold text-lime-500 text-2xl">Our Project</h6>
+        <h3 class="font-bold text-sky-900 text-3xl md:text-6xl leading-8">Our
+          Special Project</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12">
+        <div class="w-full border rounded-t-lg rounded-b-sm">
+          <div class="relative overflow-hidden rounded-t-lg">
+            <img
+              class="object-cover object-center w-full h-72 mx-auto rounded-t-lg hover:scale-125 transition-all duration-700 ease-linear"
+              src="img/klinap 10.webp" alt="avatar" />
+          </div>
+          <div class="my-5 font-roboto text-center">
+            <h3 class="text-2xl font-bold text-sky-900 hover:text-lime-500">
+              Residential Service</h3>
+            <p class="mt-1 font-medium text-neutral-400">Residential
+              Service</p>
+          </div>
+        </div>
+        <div class="w-full border rounded-t-lg rounded-b-sm">
+          <div class="relative overflow-hidden rounded-t-lg">
+            <img
+              class="object-cover object-center w-full h-72 mx-auto rounded-t-lg hover:scale-125 transition-all duration-700 ease-linear"
+              src="img/klinap 11.webp" alt="avatar" />
+          </div>
+          <div class="my-5 font-roboto text-center">
+            <h3 class="text-2xl font-bold text-sky-900 hover:text-lime-500">
+              Residential Service</h3>
+            <p class="mt-1 font-medium text-neutral-400">Residential
+              Service</p>
+          </div>
+        </div>
+        <div class="w-full border rounded-t-lg rounded-b-sm">
+          <div class="relative overflow-hidden rounded-t-lg">
+            <img
+              class="object-cover object-center w-full h-72 mx-auto rounded-t-lg hover:scale-125 transition-all duration-700 ease-linear"
+              src="img/klinap 12.webp" alt="avatar" />
+          </div>
+          <div class="my-5 font-roboto text-center">
+            <h3 class="text-2xl font-bold text-sky-900 hover:text-lime-500">
+              Residential Service</h3>
+            <p class="mt-1 font-medium text-neutral-400">Residential
+              Service</p>
+          </div>
+        </div>
+        <div class="w-full border rounded-t-lg rounded-b-sm">
+          <div class="relative overflow-hidden rounded-t-lg">
+            <img
+              class="object-cover object-center w-full h-72 mx-auto rounded-t-lg hover:scale-125 transition-all duration-700 ease-linear"
+              src="img/klinap 13.webp" alt="avatar" />
+          </div>
+          <div class="my-5 font-roboto text-center">
+            <h3 class="text-2xl font-bold text-sky-900 hover:text-lime-500">
+              Residential Service</h3>
+            <p class="mt-1 font-medium text-neutral-400">Residential
+              Service</p>
+          </div>
+        </div>
+        <div class="w-full border rounded-t-lg rounded-b-sm">
+          <div class="relative overflow-hidden rounded-t-lg">
+            <img
+              class="object-cover object-center w-full h-72 mx-auto rounded-t-lg hover:scale-125 transition-all duration-700 ease-linear"
+              src="img/klinap 14.webp" alt="avatar" />
+          </div>
+          <div class="my-5 font-roboto text-center">
+            <h3 class="text-2xl font-bold text-sky-900 hover:text-lime-500">
+              Residential Service</h3>
+            <p class="mt-1 font-medium text-neutral-400">Residential
+              Service</p>
+          </div>
+        </div>
+        <div class="w-full border rounded-t-lg rounded-b-sm">
+          <div class="relative overflow-hidden rounded-t-lg">
+            <img
+              class="object-cover object-center w-full h-72 mx-auto rounded-t-lg hover:scale-125 transition-all duration-700 ease-linear"
+              src="img/klinap 3.webp" alt="avatar" />
+          </div>
+          <div class="my-5 font-roboto text-center">
+            <h3 class="text-2xl font-bold text-sky-900 hover:text-lime-500">
+              Residential Service</h3>
+            <p class="mt-1 font-medium text-neutral-400">Residential
+              Service</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 mx-auto translate-y-20 lg:translate-y-1/2">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 bg-lime-500 px-10 py-16 rounded-3xl font-roboto">
+        <h1
+          class="text-3xl text-center lg:text-left font-bold lg:text-4xl text-white">
+          Get Updates & Stay Connected Subscribe To Our Newsletter
+        </h1>
+        <div
+          class="flex flex-col justify-center items-center mx-auto mt-6 sm:flex-row gap-4">
+          <input id="email" type="text"
+            class="px-8 py-3 h-max w-max text-neutral-400 bg-white border rounded-md ring-0 outline-0"
+            placeholder="Email Address">
+
+          <button
+            class="w-full px-6 py-3 tracking-wides uppercase bg-sky-900 hover:bg-white hover:text-sky-900 text-white transition-colors duration-300 transform ">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-sky-900">
+    <div class="container px-6 pb-6 pt-40 mx-auto">
+      <div class="lg:flex">
+        <div class="w-full -mx-6 lg:w-2/5">
+          <div class="px-6">
+            <a href="#"
+              class="w-auto h-6 sm:h-7 text-3xl text-lime-500 font-bold">
+              Kli<span class="text-white">nap.</span>
+            </a>
+
+            <p class="max-w-sm mt-2 text-neutral-400">Cras sit amet mi non orci
+              pretium consectetur. Donec iaculis ante ac sollicitudin luctus.
+              Phasellus ut lacus lacus. Phasellus sagittis ex id tortor
+              tincidunt luctus. Donec consectetur consequat bibendum
+            </p>
+
+            <div class="flex mt-6 -mx-2">
+              <a href="#"
+                class="mx-2 text-neutral-400 transition-colors duration-300 hover:text-lime-500"
+                aria-label="Reddit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="feather feather-instagram">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+                  </path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+
+              <a href="#"
+                class="mx-2 text-neutral-400 transition-colors duration-300 hover:text-lime-500"
+                aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="feather feather-youtube">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                  </path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02">
+                  </polygon>
+                </svg>
+              </a>
+
+              <a href="#"
+                class="mx-2 text-neutral-400 transition-colors duration-300 hover:text-lime-500"
+                aria-label="Github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="feather feather-facebook">
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 lg:mt-0 lg:flex-1">
+          <div
+            class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div>
+              <h3 class="text-white font-roboto uppercase">About</h3>
+              <a href="#"
+                class="block mt-2 text-sm text-neutral-400 hover:text-lime-500">Company</a>
+              <a href="#"
+                class="block mt-2 text-sm text-neutral-400 hover:text-lime-500">community</a>
+              <a href="#"
+                class="block mt-2 text-sm text-neutral-400 hover:text-lime-500">Careers</a>
+            </div>
+
+            <div>
+              <h3 class="text-white font-roboto uppercase">Blog</h3>
+              <a href="#"
+                class="block mt-2 text-sm text-neutral-400 hover:text-lime-500">Tec</a>
+              <a href="#"
+                class="block mt-2 text-sm text-neutral-400 hover:text-lime-500">Music</a>
+              <a href="#"
+                class="block mt-2 text-sm text-neutral-400 hover:text-lime-500">Videos</a>
+            </div>
+
+            <div>
+              <h3 class="text-white font-roboto uppercase">Products</h3>
+              <a href="#"
+                class="block mt-2 text-sm text-neutral-400 hover:text-lime-500">Landing
+                Page</a>
+              <a href="#"
+                class="block mt-2 text-sm text-neutral-400 hover:text-lime-500">Online
+                Shope</a>
+              <a href="#"
+                class="block mt-2 text-sm text-neutral-400 hover:text-lime-500">Web
+                News</a>
+            </div>
+
+            <div>
+              <h3 class="text-white font-roboto uppercase">Contact</h3>
+              <span
+                class="block mt-2 text-sm text-neutral-400 hover:text-lime-500">+1
+                526 654 8965</span>
+              <span
+                class="block mt-2 text-sm text-neutral-400 hover:text-lime-500">example@email.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="h-px my-6 bg-gray-200 border-none">
+
+      <div>
+        <p class="text-center text-neutral-400">Copyright © 2024. Design by
+          <a href="index.html"><span
+              class="text-lime-500 hover:text-white font-roboto">PenaKode</span></a>
+          - All
+          rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="splide.combined.js" defer></script>
+  <script defer
+    src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js">
+    </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

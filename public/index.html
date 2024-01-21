@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>PenaKode</title>
+</head>
+
+<body>
+  <header class="relative">
+    <nav x-data="{ isOpen: false }"
+      class="fixed w-full top-0 z-50 bg-white shadow-md">
+      <div
+        class="container px-6 py-3 mx-auto md:flex md:flex-row md:justify-between md:items-center space-y-1">
+        <div class="flex items-center justify-between">
+          <a href="#">
+            <img class="w-auto h-8 lg:h-10" src="img/PENAKODE.png" alt="">
+          </a>
+
+          <!-- Mobile menu button -->
+          <div class="flex md:hidden">
+            <button x-cloak @click="isOpen = !isOpen" type="button"
+              class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
+              aria-label="toggle menu">
+              <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 8h16M4 16h16" />
+              </svg>
+
+              <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+        <div x-cloak
+          :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
+          class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white md:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
+          <div class="flex flex-col md:flex-row md:mx-6">
+            <a class="font-bold my-2 text-gray-700 transition-colors duration-300 transform hover:text-slate-900 md:mx-4 md:my-0"
+              href="#">Home</a>
+            <a class="font-bold my-2 text-gray-700 transition-colors duration-300 transform hover:text-slate-900 md:mx-4 md:my-0"
+              href="#">Tema</a>
+            <a class="font-bold my-2 text-gray-700 transition-colors duration-300 transform dhover:text-slate-900 md:mx-4 md:my-0"
+              href="#">Contact</a>
+            <a class="font-bold my-2 text-gray-700 transition-colors duration-300 transform hover:text-slate-900 md:mx-4 md:my-0"
+              href="#">About</a>
+            <button
+              class="px-5 py-4 md:hidden w-fit my-2 text-white bg-slate-900 font-poppins lg:tracking-wides uppercase transition-colors duration-300 transform border border-white hover:bg-blue-900 hover:text-white">
+              Contact Us
+            </button>
+          </div>
+        </div>
+        <button
+          class="px-5 py-4 hidden md:block text-white bg-slate-900 font-poppins tracking-wides uppercase transition-colors duration-300 transform border border-white hover:bg-blue-900 hover:text-white">
+          Contact Us
+        </button>
+      </div>
+    </nav>
+    <div
+      class="w-full h-max flex bg-cover bg-center py-20 overflow-hidden text-white relative before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-r before:from-blue-950 before:to-blue-700 before:opacity-80 before:top-0"
+      style="background-image: url(img/Header.jpg);">
+      <div
+        class="container  flex items-center justify-center px-6 relative min-[438px]:h-screen max-[437px]:h-full">
+        <div class="font-poppins mx-auto text-center max-w-screen-md space-y-5">
+          <h2 class="text-5xl font-black capitalize">
+            jasa</h2>
+          <h1
+            class="text-gray-800 text-4xl mx-auto w-fit px-2 uppercase bg-white md:text-5xl lg:text-5xl xl:text-7xl">
+            landing page</h1>
+          <h2 class="text-4xl">
+            Desain Exclusive + Copywriting</h2>
+          <p class="max-w-prose">
+            Dapatkan jasa landing page profesional dengan layanan full
+            support after sales, yang siap membantu suksesakan promosi
+            online Anda,
+          </p>
+          <div class="space-y-4">
+            <button
+              class="text-slate-900 px-5 py-4 font-poppins tracking-widest uppercase transition-all duration-300 transform bg-white hover:bg-slate-900 hover:text-white">
+              Lihat Tema
+            </button>
+            <button
+              class="px-5 py-4 text-white font-poppins tracking-wides uppercase transition-colors duration-300 transform border border-white hover:bg-slate-900 hover:text-white">
+              pesan sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container px-6 py-20 mx-auto">
+      <h1
+        class="text-3xl font-semibold font-poppins text-center text-gray-800 capitalize md:text-5xl">
+        Portofolio
+      </h1>
+
+      <p
+        class="mt-4 text-center text-gray-500 font-poppins max-w-prose mx-auto">
+        Sebagai penyedia jasa pembuatan website profesional yang
+        berpengalaman, kami telah menyelesaikan berbagai proyek sesuai dengan
+        kebutuhan klien.
+      </p>
+
+      <div
+        class="grid grid-cols-1 gap-6 mt-8 xl:mt-12 md:grid-cols-2 lg:grid-cols-3">
+        <a href="Hijaban.html" target="_blank">
+          <div
+            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
+            style="
+              background-image: url('img/home_1.JPG');
+            ">
+            <div
+              class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+              <h2 class="mt-4 text-5xl font-semibold text-white capitalize">
+                Hijaban
+              </h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-right-circle h-14 w-14 mt-5 stroke-white">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 16 16 12 12 8"></polyline>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+          </div>
+        </a>
+        <a href="Schoolsmart.html" target="_blank">
+          <div
+            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
+            style="
+              background-image: url('img/home_2.JPG');
+            ">
+
+            <div
+              class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+              <h2 class="mt-4 text-5xl font-semibold text-white capitalize">
+                School Smart
+              </h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-right-circle h-14 w-14 mt-5 stroke-white">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 16 16 12 12 8"></polyline>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+          </div>
+        </a>
+        <a href="SimfoniSelera.html" target="_blank">
+          <div
+            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
+            style="
+              background-image: url('img/home_3.JPG');
+            ">
+            <div
+              class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+              <h2 class="mt-4 text-5xl font-semibold text-white capitalize">
+                SimfoniSelera
+              </h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-right-circle h-14 w-14 mt-5 stroke-white">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 16 16 12 12 8"></polyline>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+          </div>
+        </a>
+        <a href="VisionGuard.html" target="_blank">
+          <div
+            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
+            style="
+              background-image: url('img/home_4.JPG');
+            ">
+            <div
+              class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+              <h2 class="mt-4 text-5xl font-semibold text-white capitalize">
+                VisionGuard
+              </h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-right-circle h-14 w-14 mt-5 stroke-white">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 16 16 12 12 8"></polyline>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+          </div>
+        </a>
+        <a href="BumiHijau.html" target="_blank">
+          <div
+            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
+            style="
+              background-image: url('img/home_5.JPG');
+            ">
+            <div
+              class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+              <h2 class="mt-4 text-5xl font-semibold text-white capitalize">
+                BumiHijau
+              </h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-right-circle h-14 w-14 mt-5 stroke-white">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 16 16 12 12 8"></polyline>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+          </div>
+        </a>
+        <a href="Travol.html" target="_blank">
+          <div
+            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
+            style="
+              background-image: url('img/home_6.JPG');
+            ">
+            <div
+              class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+              <h2 class="mt-4 text-5xl font-semibold text-white capitalize">
+                Travol
+              </h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-right-circle h-14 w-14 mt-5 stroke-white">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 16 16 12 12 8"></polyline>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 py-20 mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div
+          class="relative overflow-hidden w-full lg:mx-6 rounded-xl lg:h-64 ">
+          <img class="hover:scale-125 transition-all duration-700 ease-linear"
+            src="img/home header 1.jpg" alt="" />
+        </div>
+        <div class="lg:mt-0 lg:mx-6 relative">
+          <p
+            class="text-lg text-gray-800 font-bold p-2 uppercase bg-yellow-200 w-fit">
+            efisien dan terpercaya
+          </p>
+          <h3
+            class="text-4xl md:text-5xl font-bold font-poppins text-gray-800 capitalize">
+            Bingung Urus Website? Serahkan ke kami, Waktu Anda Berharga!
+          </h3>
+
+          <p class="mt-3 font-poppins text-gray-800">
+            Bangun citra bisnis Anda secara instan dengan website profesional!
+            Segera temukan solusi mudah, efisien, dan terpercaya bersama
+            Social Media Agency pilihan 1000+ klien. Tingkatkan visibilitas,
+            raih keuntungan!
+          </p>
+
+        </div>
+        <div
+          class="relative overflow-hidden w-full lg:mx-6 rounded-xl lg:order-last">
+          <img class="hover:scale-125 transition-all duration-500 ease-linear"
+            src="img/home header.jpg" alt="" />
+        </div>
+        <div class="mt-6 lg:mt-0 lg:mx-6 lg:order-3">
+          <p
+            class="text-lg text-gray-800 font-bold p-2 uppercase bg-yellow-200 w-fit">
+            Jangan pusing urus Website!
+          </p>
+          <h3
+            class="text-4xl md:text-5xl font-bold font-poppins text-gray-800 capitalize">
+            Mengapa harus manajemen Website bersama PenaKode?
+          </h3>
+          <p class="mt-3 font-poppins text-gray-800">
+            Pena Kode hadir sebagai mitra andal dalam mengelola dan
+            mengoptimalkan kehadiran digital Anda. Dengan layanan manajemen
+            website terbaik, kami membantu Anda membangun jejak digital yang
+            kuat, meningkatkan visibilitas, dan memaksimalkan potensi online
+            bisnis Anda.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 py-0 md:py-10 mx-auto">
+      <div class="w-full md:max-w-screen-sm mx-auto pt-10 pb-20">
+        <h1
+          class="text-4xl md:text-5xl text-center font-bold font-poppins text-gray-800 capitalize">
+          Create beautiful website with PenaKode!
+        </h1>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 font-poppins">
+        <div>
+          <svg class="stroke-gray-800 w-10 h-10" fill="none"
+            stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25">
+            </path>
+          </svg>
+          <h1 class="mt-4 text-xl font-semibold text-gray-800">
+            Desain Responsif dan Estetis
+          </h1>
+
+          <p class="mt-2 text-gray-500">
+            Pena Kode menghadirkan desain website yang responsif dan estetis,
+            memastikan tampilan yang optimal di berbagai perangkat. Dengan
+            fokus pada pengalaman pengguna yang menarik, website Anda tidak
+            hanya berfungsi dengan baik tetapi juga memikat audiens secara
+            visual.
+          </p>
+        </div>
+        <div>
+          <svg class="stroke-gray-800 w-10 h-10" fill="none"
+            stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z">
+            </path>
+          </svg>
+          <h1 class="mt-4 text-xl font-semibold text-gray-800">
+            Tim Profesional dan Berpengalaman
+          </h1>
+
+          <p class="mt-2 text-gray-500">
+            Dibackup oleh tim yang berpengalaman dalam bidangnya, Pena Kode
+            menjamin pengerjaan website dengan standar tertinggi.
+            Profesionalisme kami menciptakan solusi yang sesuai dengan
+            kebutuhan bisnis Anda.
+          </p>
+        </div>
+        <div>
+          <svg class="stroke-gray-800 w-10 h-10" fill="none"
+            stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z">
+            </path>
+          </svg>
+
+          <h1 class="mt-4 text-xl font-semibold text-gray-800">
+            Keamanan Terjamin
+          </h1>
+
+          <p class="mt-2 text-gray-500">
+            Keamanan merupakan prioritas utama Pena Kode. Melalui teknologi
+            terkini dan praktik keamanan terbaik, kami menjaga website Anda
+            dari potensi risiko keamanan, memberikan Anda ketenangan pikiran
+            sehingga dapat fokus pada pengembangan bisnis online Anda.
+          </p>
+        </div>
+
+        <div>
+          <svg class="stroke-gray-800 w-10 h-10" fill="none"
+            stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z">
+            </path>
+          </svg>
+          <h1 class="mt-4 text-xl font-semibold text-gray-800">
+            Optimasi Kinerja dan SEO
+          </h1>
+
+          <p class="mt-2 text-gray-500">
+            Pena Kode tidak hanya merancang website yang menarik, tetapi juga
+            mengoptimalkan kinerjanya. Dengan memperhatikan faktor-faktor SEO
+            (Search Engine Optimization), kami membantu website Anda
+            mendapatkan peringkat yang lebih baik di mesin pencari,
+            meningkatkan visibilitas, dan mendatangkan trafik yang lebih
+            banyak.
+          </p>
+        </div>
+        <div>
+          <svg class="stroke-gray-800 w-10 h-10" fill="none"
+            stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z">
+            </path>
+          </svg>
+          <h1 class="mt-4 text-xl font-semibold text-gray-800">
+            Fleksibilitas dan Kustomisasi
+          </h1>
+
+          <p class="mt-2 text-gray-500">
+            Setiap bisnis memiliki kebutuhan uniknya sendiri. Pena Kode
+            memberikan solusi yang fleksibel dan dapat disesuaikan, sehingga
+            website yang dibangun sesuai dengan visi dan tujuan bisnis Anda.
+          </p>
+        </div>
+        <div>
+          <svg class="stroke-gray-800 w-10 h-10" fill="none"
+            stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+            </path>
+          </svg>
+          <h1 class="mt-4 text-xl font-semibold text-gray-800">
+            Harga Terjangkau dan Transparan
+          </h1>
+
+          <p class="mt-2 text-gray-500">
+            Pena Kode menawarkan layanan berkualitas tinggi dengan harga yang
+            terjangkau. Kami percaya pada transparansi dalam penawaran harga,
+            sehingga Anda tahu persis apa yang Anda dapatkan tanpa ada biaya
+            tersembunyi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 py-10 mx-auto">
+      <div class="mx-auto max-w-screen-sm pt-10 pb-20">
+        <h1
+          class="text-3xl text-center font-bold font-poppins text-gray-800 md:text-5xl">
+          Buat Bisnismu Melejit Sekarang!
+        </h1>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-3">
+        <a href="Klinap.html" target="_blank" rel="noopener noreferrer">
+          <div
+            class="flex items-end overflow-hidden bg-cover bg-center rounded-lg w-full h-64"
+            style="
+              background-image: url(img/home_10.JPG);
+            ">
+          </div>
+        </a>
+        <a href="Aventador.html" target="_blank" rel="noopener noreferrer">
+          <div
+            class="flex items-end overflow-hidden bg-cover bg-center rounded-lg w-full h-64"
+            style="
+              background-image: url(img/home_9.JPG);
+            ">
+          </div>
+        </a>
+        <a href="KreLab.html" target="_blank" rel="noopener noreferrer">
+          <div
+            class="flex items-end overflow-hidden bg-cover bg-center rounded-lg w-full h-64"
+            style="
+              background-image: url(img/home_8.JPG);
+            ">
+          </div>
+        </a>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
+        <a href="SiboConsultant.html" target="_blank" rel="noopener noreferrer">
+          <div class="overflow-hidden bg-cover bg-center rounded-lg w-full h-64"
+            style="
+              background-image: url(img/home_7.JPG);
+            ">
+          </div>
+        </a>
+        <a href="Travol.html" target="_blank" rel="noopener noreferrer">
+          <div class="overflow-hidden bg-cover bg-center rounded-lg w-full h-64"
+            style="
+              background-image: url(img/home_6.JPG);
+            ">
+          </div>
+        </a>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-5">
+        <a href="BumiHijau.html" target="_blank" rel="noopener noreferrer">
+          <div class="overflow-hidden bg-cover bg-center rounded-lg w-full h-64"
+            style="
+              background-image: url(img/home_5.JPG);
+            ">
+          </div>
+        </a>
+        <a href="VisionGuard.html" target="_blank" rel="noopener noreferrer">
+          <div class="overflow-hidden bg-cover bg-center rounded-lg w-full h-64"
+            style="
+              background-image: url(img/home_4.JPG);
+            ">
+          </div>
+        </a>
+        <a href="SimfoniSelera.html" target="_blank" rel="noopener noreferrer">
+          <div class="overflow-hidden bg-cover bg-center rounded-lg w-full h-64"
+            style="
+              background-image: url(img/home_3.JPG);
+            ">
+          </div>
+        </a>
+        <a href="Schoolsmart.html" target="_blank" rel="noopener noreferrer">
+          <div class="overflow-hidden bg-cover bg-center rounded-lg w-full h-64"
+            style="
+              background-image: url(img/home_2.JPG);
+            ">
+          </div>
+        </a>
+        <a href="Hijaban.html" target="_blank" rel="noopener noreferrer">
+          <div class="overflow-hidden bg-cover bg-center rounded-lg w-full h-64"
+            style="
+              background-image: url(img/home_1.JPG);
+            ">
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white">
+    <div class="container px-6 py-20 mx-auto">
+      <h1
+        class="text-4xl font-bold font-poppins text-center text-gray-800 capitalize md:text-5xl">
+        Pricing Plan
+      </h1>
+
+      <p class="max-w-prose mx-auto mt-2 text-center text-gray-500">
+        Mulai dari 400rb saja Bisnis Anda Siap Melesat !
+      </p>
+
+      <div
+        class="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="w-full px-8 py-16 mb-8 space-y-3 text-center border border-gray-200 rounded-lg shadow-xl">
+          <h2 class="text-3xl font-bold text-gray-800 uppercase">
+            Basic
+          </h2>
+          <p class="font-medium text-gray-500 pb-3 uppercase">
+            Harga Spesial untuk Anda
+          </p>
+
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>1 Page</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Proses 1 hari</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Free Domain .my.id</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Free Hosting 3 Gb 1 Bulan</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Free SSL</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-red-800 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Email Bisnis</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-red-800 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Copywriting / SEO Friendly</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-red-800 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Full Maintenance & Support</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Revisi 1x Minor</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Full Optimasi Speed</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Google Analityc</p>
+          </div>
+          <h2
+            class="text-2xl pt-6 line-through font-bold text-red-800 uppercase">
+            Rp. 850.000
+          </h2>
+          <h2 class="text-5xl font-bold text-slate-900 uppercase">480k</h2>
+          <button
+            class="px-6 py-3 mt-20 tracking-wides text-white font-bold transition-colors duration-300 transform bg-slate-900 hover:bg-slate-800">
+            Saya Tertarik
+          </button>
+        </div>
+        <div
+          class="bg-slate-900 w-full p-8 mb-8 space-y-3 text-center border border-gray-200 rounded-lg">
+          <h2 class="text-3xl font-bold text-yellow-300 uppercase">
+            Medium
+          </h2>
+          <p class="font-medium text-white pb-3 uppercase">
+            Harga Spesial untuk Anda
+          </p>
+
+          <div class="flex items-center gap-3 text-white">
+            <svg class="stroke-white w-8 h-8" fill="none" stroke="currentColor"
+              stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>2 Page</p>
+          </div>
+          <div class="flex items-center gap-3 text-white">
+            <svg class="stroke-white w-8 h-8" fill="none" stroke="currentColor"
+              stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Proses 3-4 hari</p>
+          </div>
+          <div class="flex items-center gap-3 text-white">
+            <svg class="stroke-white w-8 h-8" fill="none" stroke="currentColor"
+              stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Free Domain .com</p>
+          </div>
+          <div class="flex items-center gap-3 text-white">
+            <svg class="stroke-white w-8 h-8" fill="none" stroke="currentColor"
+              stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Free Hosting 3 Gb 3 Bulan</p>
+          </div>
+          <div class="flex items-center gap-3 text-white">
+            <svg class="stroke-white w-8 h-8" fill="none" stroke="currentColor"
+              stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Free SSL</p>
+          </div>
+          <div class="flex items-center gap-3 text-white">
+            <svg class="stroke-yellow-300 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Email Bisnis</p>
+          </div>
+          <div class="flex items-center gap-3 text-white">
+            <svg class="stroke-white w-8 h-8" fill="none" stroke="currentColor"
+              stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Copywriting / SEO Friendly</p>
+          </div>
+          <div class="flex items-center gap-3 text-white">
+            <svg class="stroke-white w-8 h-8" fill="none" stroke="currentColor"
+              stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Full Maintenance & Support</p>
+          </div>
+          <div class="flex items-center gap-3 text-white">
+            <svg class="stroke-white w-8 h-8" fill="none" stroke="currentColor"
+              stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Revisi 3x Minor</p>
+          </div>
+          <div class="flex items-center gap-3 text-white">
+            <svg class="stroke-white w-8 h-8" fill="none" stroke="currentColor"
+              stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Full Optimasi Speed</p>
+          </div>
+          <div class="flex items-center gap-3 text-white">
+            <svg class="stroke-white w-8 h-8" fill="none" stroke="currentColor"
+              stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Google Analityc</p>
+          </div>
+          <h2
+            class="text-2xl pt-6 line-through font-bold text-yellow-300 uppercase">
+            Rp1.500.000
+          </h2>
+          <h2 class="text-5xl font-bold text-white uppercase">949k</h2>
+          <button
+            class="px-6 py-3 mt-20 tracking-wides text-slate-900 font-bold transition-colors duration-300 transform bg-white hover:bg-transparent hover:border hover:border-white hover:text-white">
+            Saya Tertarik
+          </button>
+        </div>
+        <div
+          class="w-full p-8 mb-8 space-y-3 text-center border border-gray-200 rounded-lg shadow-xl">
+          <h2 class="text-3xl font-bold text-gray-800 uppercase">
+            Large
+          </h2>
+          <p class="font-medium text-gray-500 pb-3 uppercase">
+            Harga Spesial untuk Anda
+          </p>
+
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>3-4 Page</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Proses 1 Minggu</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Free Domain .com</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>ree Hosting Unlimited 1year</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Free SSL</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>1 Email Bisnis</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Copywriting / SEO Friendly</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Full Maintenance & Support</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Revisi Full Request</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Full Optimasi Speed</p>
+          </div>
+          <div class="flex items-center gap-3 text-gray-800">
+            <svg class="stroke-blue-950 w-8 h-8" fill="none"
+              stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+            <p>Google Analityc</p>
+          </div>
+          <h2
+            class="text-2xl pt-6 line-through font-bold text-red-800 uppercase">
+            Rp 1,890.000
+          </h2>
+          <h2 class="text-5xl font-bold text-slate-900 uppercase">1,490k</h2>
+          <button
+            class="px-6 py-3 mt-20 tracking-wides text-white font-bold transition-colors duration-300 transform bg-slate-900 hover:bg-slate-800">
+            Saya Tertarik
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-slate-900">
+    <div class="container px-6 pb-6 pt-12 mx-auto">
+      <div class="lg:flex">
+        <div class="w-full -mx-6 lg:w-2/5">
+          <div class="px-6">
+            <a href="#">
+              <img class="w-auto h-8 lg:h-10" src="img/penakode white.png"
+                alt="">
+            </a>
+
+            <p class="max-w-sm mt-2 text-gray-400">Pena Kode adalah tempat di
+              mana kreativitas bertemu dengan teknologi untuk membentuk
+              pengalaman digital yang luar biasa.
+            </p>
+
+            <div class="flex mt-6 -mx-2">
+              <a href="#"
+                class="mx-2 text-gray-400 transition-colors duration-300 hover:text-white"
+                aria-label="Reddit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="feather feather-instagram">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+                  </path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+
+              <a href="#"
+                class="mx-2 text-gray-400 transition-colors duration-300 hover:text-white"
+                aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="feather feather-youtube">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                  </path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02">
+                  </polygon>
+                </svg>
+              </a>
+
+              <a href="#"
+                class="mx-2 text-gray-400 transition-colors duration-300 hover:text-white"
+                aria-label="Github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="feather feather-facebook">
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 lg:mt-0 lg:flex-1">
+          <div
+            class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div>
+              <h3 class="text-white font-poppins uppercase">About</h3>
+              <a href="#"
+                class="block mt-2 text-sm text-gray-400 hover:text-white">Company</a>
+              <a href="#"
+                class="block mt-2 text-sm text-gray-400 hover:text-white">community</a>
+              <a href="#"
+                class="block mt-2 text-sm text-gray-400 hover:text-white">Careers</a>
+            </div>
+
+            <div>
+              <h3 class="text-white font-poppins uppercase">Blog</h3>
+              <a href="#"
+                class="block mt-2 text-sm text-gray-400 hover:text-white">Tec</a>
+              <a href="#"
+                class="block mt-2 text-sm text-gray-400 hover:text-white">Music</a>
+              <a href="#"
+                class="block mt-2 text-sm text-gray-400 hover:text-white">Videos</a>
+            </div>
+
+            <div>
+              <h3 class="text-white font-poppins uppercase">Products</h3>
+              <a href="#"
+                class="block mt-2 text-sm text-gray-400 hover:text-white">Landing
+                Page</a>
+              <a href="#"
+                class="block mt-2 text-sm text-gray-400 hover:text-white">Online
+                Shope</a>
+              <a href="#"
+                class="block mt-2 text-sm text-gray-400 hover:text-white">Web
+                News</a>
+            </div>
+
+            <div>
+              <h3 class="text-white font-poppins uppercase">Contact</h3>
+              <span
+                class="block mt-2 text-sm text-gray-400 hover:text-white">+62
+                858 4029 4989</span>
+              <span
+                class="block mt-2 text-sm text-gray-400 hover:text-white">bangusia18@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="h-px my-6 bg-gray-200 border-none">
+
+      <div>
+        <p class="text-center text-gray-500 font-poppins">Copyright © 2024.
+          <a href="index.html"><span class="text-white">PenaKode</span></a>
+          - All
+          rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script defer
+    src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+
+</html>
