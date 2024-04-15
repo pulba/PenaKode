@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const { addDynamicIconSelectors } = require('@iconify/tailwind');
 module.exports = {
   content: ['./public/**/*.{html,js}'],
   theme: {
@@ -33,5 +34,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: {
+    'postcss-import': {},
+    'tailwindcss/nesting': 'postcss-nesting',
+    tailwindcss: {},
+    autoprefixer: {},
+  },
 };

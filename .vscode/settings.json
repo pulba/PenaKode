@@ -1,4 +1,6 @@
 {
   "editor.wordWrapColumn": 80,
-  "editor.wordWrap": "wordWrapColumn"
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.minimap.autohide": false,
+  "editor.minimap.showSlider": "mouseover"
 }

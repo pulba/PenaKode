@@ -8,377 +8,361 @@
   <link
     href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     rel="stylesheet">
-  <title>Portofolio || Syaiful Bahri</title>
+  <title>Syaiful Bahri | Frontend - Design</title>
 </head>
 
 <body>
   <header class="relative">
-    <nav x-data="{ isOpen: false }"
-      class="fixed w-full top-0 z-50 bg-white shadow-md">
-      <div
-        class="container px-6 py-3 mx-auto md:flex md:flex-row md:justify-between md:items-center space-y-1">
-        <div class="flex items-center justify-between">
-          <a href="#" class="text-3xl font-bold font-poppins">
-            Syaiful Bahri
+    <!-- <div x-data="{ isOpen: false }" id="playPauseBtn"
+      class="bg-red-800 w-screen fixed inset-0 z-20 my-5">
+      <button x-cloak @click="isOpen = !isOpen">
+        <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-12 h-12 stroke-white border-2 border-black rounded-full p-2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 4.5v15m7.5-7.5h-15" />
+        </svg>
+        <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-12 h-12 stroke-white border-2 border-white rounded-full p-2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+        </svg>
+      </button>
+      <div x-cloak
+        :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
+        class="relative text-white top-0 py-4 flex flex-col md:flex-row gap-6 w-full">
+        <div
+          class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+          <a href="https://web.facebook.com/bangusiaa">
+            <p class="text-xl font-poppins uppercase mt-2">
+              facebook
+            </p>
           </a>
-
-          <!-- Mobile menu button -->
-          <div class="flex md:hidden">
-            <button x-cloak @click="isOpen = !isOpen" type="button"
-              class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
-              aria-label="toggle menu">
-              <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M4 8h16M4 16h16" />
-              </svg>
-
-              <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-
+          <a href="https://www.instagram.com/bang_usia/?hl=en">
+            <p class="text-xl font-poppins uppercase mt-2">
+              instagram
+            </p>
+          </a>
         </div>
-
-        <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-        <div x-cloak
-          :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
-          class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white md:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
-          <div class="flex flex-col md:flex-row md:mx-6">
-            <a class="font-bold my-2 text-gray-700 transition-colors duration-300 transform hover:text-slate-900 md:mx-4 md:my-0"
-              href="#">Home</a>
-            <a class="font-bold my-2 text-gray-700 transition-colors duration-300 transform hover:text-slate-900 md:mx-4 md:my-0"
-              href="#About">About</a>
-            <a class="font-bold my-2 text-gray-700 transition-colors duration-300 transform hover:text-slate-900 md:mx-4 md:my-0"
-              href="#Portofolio">Portofolio</a>
-            <a class="font-bold my-2 text-gray-700 transition-colors duration-300 transform dhover:text-slate-900 md:mx-4 md:my-0"
-              href="#Contact">Contact</a>
-            <a href="#Contact">
-              <button
-                class="px-5 py-4 md:hidden w-fit my-2 text-white bg-gray-800 font-poppins lg:tracking-wides uppercase transition-colors duration-300 transform border border-white hover:bg-gray-600 hover:text-white">
-                Contact Us
-              </button>
-            </a>
-
-          </div>
-        </div>
-        <a href="#Contact">
-          <button
-            class="px-5 py-4 hidden md:block text-white bg-gray-800 font-poppins tracking-wides uppercase transition-colors duration-300 transform border border-white hover:bg-gray-600 hover:text-white">
-            Contact Us
-          </button>
-        </a>
       </div>
-    </nav>
+    </div> -->
     <div
       class="w-full h-max flex bg-cover bg-center py-20 overflow-hidden text-white relative before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-r before:from-black before:to-black before:opacity-80 before:top-0"
       style="background-image: url(img/Header.jpg);">
       <div
         class="container  flex items-center justify-center px-6 relative min-[438px]:h-screen max-[437px]:h-full">
-        <div class="font-poppins mx-auto text-center max-w-screen-md space-y-5">
-          <h2 class="text-2xl font-black capitalize">
-            Hello, I'am</h2>
+        <div class="mx-auto text-center max-w-screen-md space-y-5">
           <h1
-            class="text-white text-4xl mx-auto w-fit px-2  md:text-5xl lg:text-5xl xl:text-7xl">
+            class="text-white text-4xl font-goldman mx-auto w-fit px-2  md:text-5xl lg:text-5xl xl:text-7xl uppercase">
             Syaiful Bahri</h1>
-          <h2 class="text-4xl">
-            Frontend Developer</h2>
-          <p class="max-w-prose">
-            Frontend from Lampung, I work to make a better product for you.
-          </p>
-          <div class="space-y-4">
-            <a href="#Contact">
-              <button
-                class="text-slate-900 px-5 py-4 font-poppins tracking-widest uppercase transition-all duration-300 transform bg-white hover:bg-slate-900 hover:text-white">
-                Hire me
-              </button>
-            </a>
-            <a href="#Portofolio">
-              <button
-                class="px-5 py-4 text-white font-poppins tracking-wides uppercase transition-colors duration-300 transform underline">
-                See Portofolio
-              </button>
-            </a>
-
-          </div>
+          <h2 class="md:text-2xl font-poppins uppercase">
+            Frontend Developer | Grapich Design</h2>
         </div>
       </div>
     </div>
   </header>
-  <section id="About">
-    <div class="container py-20 px-6 mx-auto flex flex-col items-center">
-      <div class="max-w-prose">
+  <section id="About"
+    class="relative bg-cover bg-no-repeat bg-center bg-fixed overflow-hidden py-20 before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-r before:from-black before:to-black before:opacity-80 before:top-0"
+    style="background-image: url(https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); ">
+    <div
+      class="container py-20 px-6 mx-auto flex flex-col items-center relative">
+      <div class="text-white text-center">
         <h2
-          class="text-3xl font-semibold font-poppins text-gray-800 capitalize">
+          class="text-3xl md:text-5xl lg:text-7xl font-bold font-goldman uppercase">
           About me</h2>
-        <p
-          class="text-3xl md:text-4xl font-semibold font-poppins text-gray-300 capitalize mt-5">
-          I am a simple layout design made by coders
-          for projects and every cool people.</p>
+        <p class="md:text-xl font-poppins uppercase mt-2">
+          I'm a freelance Frontend Developer specialising in accessibility
+          and
+          design.
+        </p>
       </div>
     </div>
   </section>
-  <section id="Portofolio">
-    <div class="container px-6 pb-20 mx-auto">
-      <h1 class="text-3xl font-semibold font-poppins text-gray-800 capitalize">
-        Portofolio
-      </h1>
+  <section id="Portofolio"
+    class="relative bg-cover bg-no-repeat bg-center bg-fixed overflow-hidden py-20 before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-r before:from-black before:to-black before:opacity-80 before:top-0"
+    style="background-image: url(https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=1605&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); ">
+    <div class="container px-6 py-20 mx-auto relative">
+      <h2
+        class="text-3xl text-center md:text-5xl lg:text-7xl font-bold font-goldman text-white uppercase">
+        Featured projects</h2>
+      <div x-data="{ open: false }" id="playPauseBtn"
+        class="w-full flex flex-col items-center justify-center mt-5">
+        <button x-show="!open" x-on:click="open = true">
+          <svg x-on:click="open = ! open" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 h-12 stroke-white border-2 border-white rounded-full p-2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </button>
+        <button x-show="open" x-on:click="open = false">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-12 h-12 stroke-white border-2 border-white rounded-full p-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+          </svg>
 
-      <div
-        class="grid grid-cols-1 gap-6 mt-8 xl:mt-12 md:grid-cols-2 lg:grid-cols-3">
-        <a href="Hijaban.html" target="_blank">
-          <div
-            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
-            style="
-              background-image: url('img/home_1.JPG');
-            ">
+        </button>
+        <div x-show="open"
+          class="w-full grid grid-cols-1 gap-6 mt-8 xl:mt-12 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="Aventador.html" target="_blank"
+            class="border-2 border-white">
             <div
-              class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
-              <h2 class="mt-4 text-xl font-semibold text-white capitalize">
-                Hijaban
-              </h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-arrow-right-circle h-10 w-10 mt-5 stroke-white">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 16 16 12 12 8"></polyline>
-                <line x1="8" y1="12" x2="16" y2="12"></line>
-              </svg>
+              class="overflow-hidden bg-cover bg-center cursor-pointer aspect-video group"
+              style="
+              background-image: url('img/home_9.JPG');
+            ">
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+                <h2 class="mt-4 text-xl font-semibold text-white capitalize">
+                  Showroom
+                </h2>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-10 h-10 mt-3 stroke-white border-2 border-white rounded-full p-2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                </svg>
+
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="Schoolsmart.html" target="_blank">
-          <div
-            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
-            style="
+          </a>
+          <a href="Schoolsmart.html" target="_blank"
+            class="border-2 border-white">
+            <div
+              class="overflow-hidden bg-cover bg-center cursor-pointer aspect-video group"
+              style="
               background-image: url('img/home_2.JPG');
             ">
 
-            <div
-              class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
-              <h2 class="mt-4 text-xl font-semibold text-white capitalize">
-                School Smart
-              </h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-arrow-right-circle h-10 w-10 mt-5 stroke-white">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 16 16 12 12 8"></polyline>
-                <line x1="8" y1="12" x2="16" y2="12"></line>
-              </svg>
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+                <h2 class="mt-4 text-xl font-semibold text-white capitalize">
+                  School Smart
+                </h2>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-10 h-10 mt-3 stroke-white border-2 border-white rounded-full p-2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                </svg>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="SimfoniSelera.html" target="_blank">
-          <div
-            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
-            style="
+          </a>
+          <a href="SimfoniSelera.html" target="_blank"
+            class="border-2 border-white">
+            <div
+              class="overflow-hidden bg-cover bg-center cursor-pointer aspect-video group"
+              style="
               background-image: url('img/home_3.JPG');
             ">
-            <div
-              class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
-              <h2 class="mt-4 text-xl font-semibold text-white capitalize">
-                SimfoniSelera
-              </h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-arrow-right-circle h-10 w-10 mt-5 stroke-white">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 16 16 12 12 8"></polyline>
-                <line x1="8" y1="12" x2="16" y2="12"></line>
-              </svg>
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+                <h2 class="mt-4 text-xl font-semibold text-white capitalize">
+                  SimfoniSelera
+                </h2>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-10 h-10 mt-3 stroke-white border-2 border-white rounded-full p-2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                </svg>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="VisionGuard.html" target="_blank">
-          <div
-            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
-            style="
+          </a>
+          <a href="VisionGuard.html" target="_blank"
+            class="border-2 border-white">
+            <div
+              class="overflow-hidden bg-cover bg-center cursor-pointer aspect-video group"
+              style="
               background-image: url('img/home_4.JPG');
             ">
-            <div
-              class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
-              <h2 class="mt-4 text-xl font-semibold text-white capitalize">
-                VisionGuard
-              </h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-arrow-right-circle h-10 w-10 mt-5 stroke-white">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 16 16 12 12 8"></polyline>
-                <line x1="8" y1="12" x2="16" y2="12"></line>
-              </svg>
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+                <h2 class="mt-4 text-xl font-semibold text-white capitalize">
+                  VisionGuard
+                </h2>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-10 h-10 mt-3 stroke-white border-2 border-white rounded-full p-2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                </svg>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="BumiHijau.html" target="_blank">
-          <div
-            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
-            style="
+          </a>
+          <a href="BumiHijau.html" target="_blank"
+            class="border-2 border-white">
+            <div
+              class="overflow-hidden bg-cover bg-center cursor-pointer aspect-video group"
+              style="
               background-image: url('img/home_5.JPG');
             ">
-            <div
-              class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
-              <h2 class="mt-4 text-xl font-semibold text-white capitalize">
-                BumiHijau
-              </h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-arrow-right-circle h-10 w-10 mt-5 stroke-white">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 16 16 12 12 8"></polyline>
-                <line x1="8" y1="12" x2="16" y2="12"></line>
-              </svg>
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+                <h2 class="mt-4 text-xl font-semibold text-white capitalize">
+                  BumiHijau
+                </h2>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-10 h-10 mt-3 stroke-white border-2 border-white rounded-full p-2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                </svg>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="Travol.html" target="_blank">
-          <div
-            class="overflow-hidden bg-cover bg-center cursor-pointer h-64 group"
-            style="
+          </a>
+          <a href="Travol.html" target="_blank" class="border-2 border-white">
+            <div
+              class="overflow-hidden bg-cover bg-center cursor-pointer aspect-video group"
+              style="
               background-image: url('img/home_6.JPG');
             ">
-            <div
-              class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
-              <h2 class="mt-4 text-xl font-semibold text-white capitalize">
-                Travol
-              </h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-arrow-right-circle h-10 w-10 mt-5 stroke-white">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 16 16 12 12 8"></polyline>
-                <line x1="8" y1="12" x2="16" y2="12"></line>
-              </svg>
+              <div
+                class="flex flex-col justify-center items-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 bg-black/80 group-hover:opacity-100">
+                <h2 class="mt-4 text-xl font-semibold text-white capitalize">
+                  Travol
+                </h2>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="w-10 h-10 mt-3 stroke-white border-2 border-white rounded-full p-2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                </svg>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
-    </div>
   </section>
-  <section>
-    <div class="container py-20 px-6 mx-auto flex flex-col items-center">
-      <div class="max-w-prose">
+  <section
+    class="relative bg-cover bg-no-repeat bg-center bg-fixed overflow-hidden py-20 before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-r before:from-black before:to-black before:opacity-80 before:top-0"
+    style="background-image: url(https://images.unsplash.com/photo-1589652717521-10c0d092dea9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); ">
+    <div
+      class="container relative py-20 px-6 mx-auto flex flex-col items-center justify-center">
+      <div class="text-white text-center">
         <h2
-          class="text-3xl font-semibold font-poppins text-gray-800 capitalize">
-          What can I do </h2>
-        <p
-          class="text-3xl md:text-4xl font-semibold font-poppins text-gray-300 capitalize mt-5">
-          Here are some of the works that we can do. If you have anything else
-          to request, feel free to ask it.</p>
+          class="text-3xl md:text-5xl lg:text-7xl font-bold font-goldman uppercase">
+          Top & skill</h2>
+        <div
+          class="flex flex-row gap-5 justify-center items-center relative mt-5">
+          <div
+            class="flex flex-row gap-2 justify-center items-center rounded-full relative w-10 h-10 bg-white">
+            <img src="img/tailwind.png" alt="tailwind" class="absolute w-6">
+          </div>
+          <div
+            class="flex flex-row gap-2 justify-center items-center rounded-full relative w-10 h-10 bg-white">
+            <img src="img/astro.png" alt="Pembayaran" class="absolute w-6">
+          </div>
+          <div
+            class="flex flex-row gap-2 justify-center items-center rounded-full relative w-10 h-10 bg-white">
+            <img src="img/javascript.webp" alt="Pembayaran"
+              class="absolute w-6">
+          </div>
+          <div
+            class="flex flex-row gap-2 justify-center items-center rounded-full relative w-10 h-10 bg-white">
+            <img src="img/photoshop.png" alt="Pembayaran" class="absolute w-6">
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="splide h-screen overflow-hidden"
-    data-splide='{"type":"loop", "perPage":"1", "gap":"0", "arrows":false, "pagination":false}'>
-    <div class="h-screen splide__track overflow-visible">
-      <ul class="splide__list">
-        <li
-          class="splide__slide w-full flex bg-white bg-cover relative bg-center before:content-[''] before:absolute before:h-full before:w-full before:bg-black before:opacity-80"
-          style="background-image: url(img/home_5.JPG);"
-          data-splide-interval="1000">
-          <div
-            class="relative px-6 py-16 mx-auto text-center flex flex-col justify-center">
-            <div class="md:max-w-prose mx-auto text-center">
-              <h1 class="text-5xl font-bold text-white lg:text-6xl font-serif">
-                UMKM
-              </h1>
-            </div>
-          </div>
-        </li>
-        <li
-          class="splide__slide w-full flex bg-white bg-cover relative bg-center before:content-[''] before:absolute before:h-full before:w-full before:bg-black before:opacity-80"
-          style="background-image: url(img/home_9.JPG);"
-          data-splide-interval="1000">
-          <div
-            class="relative px-6 py-16 mx-auto text-center flex flex-col justify-center">
-            <div class="md:max-w-prose mx-auto text-center">
-              <h1 class="text-5xl font-bold text-white lg:text-6xl font-serif">
-                Showroom
-              </h1>
-            </div>
-          </div>
-        </li>
-        <li
-          class="splide__slide w-full flex bg-white bg-cover relative bg-center before:content-[''] before:absolute before:h-full before:w-full before:bg-black before:opacity-80"
-          style="background-image: url(img/home_1.JPG);"
-          data-splide-interval="1000">
-          <div
-            class="relative px-6 py-16 mx-auto text-center flex flex-col justify-center">
-            <div class="md:max-w-prose mx-auto text-center">
-              <h1 class="text-5xl font-bold text-white lg:text-6xl font-serif">
-                Boutique
-              </h1>
-            </div>
-          </div>
-        </li>
-        <li
-          class="splide__slide w-full flex bg-white bg-cover relative bg-center before:content-[''] before:absolute before:h-full before:w-full before:bg-black before:opacity-80"
-          style="background-image: url(img/home_7.JPG);"
-          data-splide-interval="1000">
-          <div
-            class="relative px-6 py-16 mx-auto text-center flex flex-col justify-center">
-            <div class="md:max-w-prose mx-auto text-center">
-              <h1 class="text-5xl font-bold text-white lg:text-6xl font-serif">
-                School
-              </h1>
-            </div>
-          </div>
-        </li>
-        <li
-          class="splide__slide w-full flex bg-white bg-cover relative bg-center before:content-[''] before:absolute before:h-full before:w-full before:bg-black before:opacity-80"
-          style="background-image: url(img/home_3.JPG);"
-          data-splide-interval="1000">
-          <div
-            class="relative px-6 py-16 mx-auto text-center flex flex-col justify-center">
-            <div class="md:max-w-prose mx-auto text-center">
-              <h1 class="text-5xl font-bold text-white lg:text-6xl font-serif">
-                Restaurant
-              </h1>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section id="Contact">
-    <div class="container px-6 py-12 mx-auto">
-      <div>
-        <p class="text-3xl font-semibold font-poppins text-gray-800 capitalize">
-          Request a quote</p>
 
-        <p
-          class="text-3xl md:text-5xl mt-2 font-semibold font-poppins text-gray-300 capitalize max-w-screen-md">
+  <section id="Contact"
+    class="relative bg-cover bg-no-repeat bg-center bg-fixed overflow-hidden py-20 before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-r before:from-black before:to-black before:opacity-80 before:top-0"
+    style="background-image: url(https://images.unsplash.com/photo-1516055619834-586f8c75d1de?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); ">
+    <div class="container relative px-6 py-12 mx-auto">
+      <div class="text-white text-center">
+        <h2
+          class="text-3xl md:text-5xl lg:text-7xl font-bold font-goldman uppercase">
+          Contact</h2>
+        <p class="md:text-xl font-poppins uppercase mt-2">
           Feel free to ask us any
-          questions related to me activities. Im will be happy to answer you.
+          questions related to me activities. <br> Im will be happy to answer
+          you.
         </p>
       </div>
-      <h4 class="text-xl font-semibold font-poppins text-gray-600 capitalize">
-        sb529447@gmail.com</h4>
-      <h4 class="text-xl font-semibold font-poppins text-gray-600 capitalize">
-        +628 5840 2949</h4>
+      <div x-data="{ open: false }" id="playPauseBtn"
+        class="w-full flex flex-col items-center justify-center my-5">
+        <button x-show="!open" x-on:click="open = true">
+          <svg x-on:click="open = ! open" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 h-12 stroke-white border-2 border-white rounded-full p-2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </button>
+        <button x-show="open" x-on:click="open = false">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-12 h-12 stroke-white border-2 border-white rounded-full p-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+          </svg>
+
+        </button>
+        <div x-show="open"
+          class="text-white mt-5 flex flex-col md:flex-row gap-6 justify-center items-center">
+          <div
+            class="flex flex-col md:flex-row gap-3 justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="w-12 h-12 stroke-white border-2 border-white rounded-full p-2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+            <h4 class="text-xl font-poppins">
+              sb529447@gmail.com</h4>
+          </div>
+          <div
+            class="flex flex-col md:flex-row gap-3 justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="w-12 h-12 stroke-white border-2 border-white rounded-full p-2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+            </svg>
+
+            <h4 class="text-xl font-poppins">
+              +628 5840 294989</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-gray-950">
+    <div class="container px-6 pt-20 pb-5 mx-auto">
+      <div class="text-white">
+        <h2
+          class="text-center text-3xl md:text-5xl lg:text-7xl font-bold font-goldman uppercase">
+          STAY IN TOUCH</h2>
+        <hr class="h-px mt-8 bg-gray-200 border-0">
+
+        <div
+          class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+          <a href="https://web.facebook.com/bangusiaa">
+            <p class="text-xl font-poppins uppercase mt-2">
+              facebook
+            </p>
+          </a>
+          <a href="https://www.instagram.com/bang_usia/?hl=en">
+            <p class="text-xl font-poppins uppercase mt-2">
+              instagram
+            </p>
+          </a>
+        </div>
+        <p class="text-end font-poppins capitalize mt-20 mb-2">Copyright © 2024
+          <a href="#" class="text-gray-400">Syaiful Bahri</a>
+        </p>
+      </div>
     </div>
   </section>
   <script defer
     src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 </body>
 
 </html>
-
-<script
-  src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<script defer
-  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script src="splide.combined.js" defer></script>
