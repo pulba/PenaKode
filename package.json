@@ -18,6 +18,7 @@
   "keywords": [],
   "description": "",
   "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/oswald": "^5.0.19"
   }
 }

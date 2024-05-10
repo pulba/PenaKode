@@ -181,10 +181,10 @@
         </div>
         <div
           class="flex flex-col md:flex-row items-center justify-center w-full gap-8 mt-6 lg:mt-0 lg:w-1/2 relative overflow-hidden">
-          <img class="w-72 h-full"
+          <img class="w-full h-96"
             src="https://images.unsplash.com/photo-1515668236457-83c3b8764839?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
-          <img class="w-80 h-full relative"
+          <img class="w-full h-96 relative"
             src="https://images.unsplash.com/photo-1581349485608-9469926a8e5e?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
         </div>
@@ -198,7 +198,7 @@
       <div
         class="text-center py-20 mx-auto flex items-center justify-center max-h-max">
         <div
-          class="bg-white pt-16 lg:mx-40 flex flex-col items-center text-center">
+          class="bg-white pt-16 lg:mx-40 flex flex-col items-center text-center rounded-lg">
           <h3 class="text-5xl font-whisper text-yellow-700">Our Special
           </h3>
           <h1 class="text-4xl lg:text-6xl font-bold font-serif">
@@ -213,15 +213,15 @@
             </path>
           </svg>
           <div
-            class="grid grid-cols-1 gap-8 my-8 px-6 xl:gap-12 md:grid-cols-2">
-            <div class="flex flex-row gap-3">
+            class="grid grid-cols-1 gap-8 my-8 px-6 xl:gap-12 md:grid-cols-2 *:flex *:flex-col *:md:flex-row *:gap-3">
+            <div class="*:w-full">
               <div>
                 <img
                   src="https://images.unsplash.com/photo-1625943558005-1a8aa87b1b66?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="w-full h-28" alt="">
+                  class="w-full h-max" alt="">
               </div>
               <div>
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-col md:flex-row justify-between mt-2">
                   <h4 class="font-bold text-yellow-700">Grilled Fillet</h4>
                   <h4 class="font-bold">$26.95</h4>
                 </div>
@@ -231,14 +231,14 @@
                   fillet, ginger.</p>
               </div>
             </div>
-            <div class="flex flex-row gap-3">
+            <div class="*:w-full">
               <div>
                 <img
                   src="https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="w-full h-28" alt="">
+                  class="w-full h-max" alt="">
               </div>
               <div>
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-col md:flex-row justify-between mt-2">
                   <h4 class="font-bold text-yellow-700">Alder Grilled Seafood
                   </h4>
                   <h4 class="font-bold">$44.95</h4>
@@ -248,14 +248,14 @@
                   paprika, Monkfish, onion, paella.</p>
               </div>
             </div>
-            <div class="flex flex-row gap-3">
+            <div class="*:w-full">
               <div>
                 <img
                   src="https://images.unsplash.com/photo-1670398564097-0762e1b30b3a?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="w-full h-28" alt="">
+                  class="w-full h-max" alt="">
               </div>
               <div>
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-col md:flex-row justify-between mt-2">
                   <h4 class="font-bold text-yellow-700">Chicken Breast</h4>
                   <h4 class="font-bold">$28.95</h4>
                 </div>
@@ -264,14 +264,14 @@
                   rosemary & beans.</p>
               </div>
             </div>
-            <div class="flex flex-row gap-3">
+            <div class="*:w-full">
               <div>
                 <img
                   src="https://images.unsplash.com/photo-1625944226626-9bd664656506?q=80&w=1444&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="w-full h-28" alt="">
+                  class="w-full h-max" alt="">
               </div>
               <div>
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-col md:flex-row justify-between mt-2">
                   <h4 class="font-bold text-yellow-700">Sea Trout</h4>
                   <h4 class="font-bold">$40.95</h4>
                 </div>
@@ -603,8 +603,7 @@
             kitchen, coffee take out bar.</p>
         </div>
         <div class="flex text-center mx-auto justify-center">
-          <a href="#"
-            class="mx-2 text-gray-600 transition-colors duration-300 hover:text-black"
+          <a href="#" class="mx-2 bg-gray-600 text-white p-2 rounded-full"
             aria-label="Reddit">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
               viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -616,8 +615,7 @@
             </svg>
           </a>
 
-          <a href="#"
-            class="mx-2 text-gray-600 transition-colors duration-300 hover:text-black"
+          <a href="#" class="mx-2 bg-gray-600 text-white p-2 rounded-full"
             aria-label="Facebook">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
               viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -629,8 +627,7 @@
             </svg>
           </a>
 
-          <a href="#"
-            class="mx-2 text-gray-600 transition-colors duration-300 hover:text-black"
+          <a href="#" class="mx-2 bg-gray-600 text-white p-2 rounded-full"
             aria-label="Github">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
               viewBox="0 0 24 24" fill="none" stroke="currentColor"

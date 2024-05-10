@@ -8,7 +8,7 @@ if (splides.length) {
       perPage: 4,
       breakpoints: {
         1024: {
-          perPage: 2,
+          perPage: 1,
         },
         640: {
           perPage: 1,
